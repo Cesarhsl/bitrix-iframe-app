@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulário Condicional Bitrix</title>
+  <script src="https://cdn.bitrix24.com/bx24.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    iframe { border: none; width: 100%; height: 600px; }
+  </style>
+</head>
+<body>
+  <h2>Aplicação via Iframe no Bitrix</h2>
+  <p>Negócio atual:</p>
+  <pre id="info"></pre>
+
+  <iframe src="https://seusite.com/seu-formulario.html"></iframe>
+
+  <script>
+    BX24.init(function () {
+      BX24.placement.info(function (placement) {
+        const dealId = placement.options.ID;
+        document.getElementById('info').innerText = `ID do negócio: ${dealId}`;
+        // Aqui você pode fazer chamadas à API usando crm.deal.get, etc.
+      });
+    });
+  </script>
+</body>
+</html>

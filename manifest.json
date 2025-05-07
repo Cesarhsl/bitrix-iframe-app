@@ -6,7 +6,7 @@
     "partner_url": "https://grupoclube.com.br",
     "placement": {
       "CRM_DEAL_DETAIL_TAB": {
-        "handler": "https://bitrix-widget-clube.netlify.app/index.html",
+        "handler": "https://bitrixiframeapp.netlify.app/index.html",
         "title": "Formulário Moto Clube"
       }
     },
